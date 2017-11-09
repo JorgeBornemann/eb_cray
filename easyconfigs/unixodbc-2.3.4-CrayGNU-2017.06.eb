@@ -1,0 +1,18 @@
+# Jorge Bornemann
+name = 'unixodbc'
+version = '2.3.4'
+
+homepage = 'http://www.unixodbc.org/'
+description = """ODBC is an open specification for providing application developers with a predictable API with which to access Data Sources. Data Sources include SQL Servers and any Data Source with an ODBC Driver. """
+
+toolchain = {'name': 'CrayGNU', 'version': '2017.06'}
+
+source_urls = ['ftp://ftp.unixodbc.org/pub/unixODBC']
+sources = ['unixODBC-%(version)s.tar.gz']
+checksums = ['2e1509a96bb18d248bf08ead0d74804957304ff7c6f8b2e5965309c632421e39']
+
+easyblock = 'ConfigureMake'
+
+runtest = False
+
+moduleclass = 'tools'
